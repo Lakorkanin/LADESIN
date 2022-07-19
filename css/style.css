@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,700);
+
+body {
+    font-family: "Roboto Condensed";
+    color: #fff;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+.__container {
+
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url("../img/background-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0,0,0, .5);
+    background-blend-mode: multiply;
+}
+
+.header-fixed {
+    background-color: #fff;
+    color: #777777;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.header__top {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 106px;   
+    z-index: 999;
+    transition: all .3s;
+}
+
+.header__top::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #878787;
+    padding-top: 105px;
+    z-index: 2;
+}
+
+.header__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list__item + .list__item{
+    margin-left: 50px
+}
+
+.item__link {
+    text-transform: uppercase;
+    color: inherit;
+    line-height: 117%;
+    letter-spacing: 0.15em;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.number-text {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: calc(21 / 18 * 100%);
+    letter-spacing: 0.05em; 
+}
+
+.header__bottom {
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+.header__inner-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__title {
+    text-transform: uppercase;
+    font-size: 140px;
+    font-weight: 300;
+    line-height: 117%;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+
+.header__subtitle {
+    max-width: 632px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: calc(27 / 20 * 100%);
+    text-align: center;
+    letter-spacing: 0.12em;
+}
+
+main {
+    margin-top: 300px;
+
+}
+
+
