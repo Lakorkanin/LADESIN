@@ -32,7 +32,6 @@ body {
 .header-fixed {
     background-color: #fff;
     color: #777777;
-    border-bottom: 1px solid #D5D5D5;
 }
 
 .header__top {
@@ -50,9 +49,9 @@ body {
     position: absolute;
     left: 0;
     right: 0;
+    bottom: 0;
     border-bottom: 1px solid #878787;
-    padding-top: 105px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .header__container {
@@ -102,8 +101,8 @@ body {
 }
 
 .header__bottom {
+    padding-top: 106px;
     height: 100%;
-    padding-bottom: 5%;
 }
 
 .header__inner-bottom {
@@ -135,8 +134,148 @@ body {
 }
 
 main {
-    margin-top: 300px;
+}
 
+.descr__company {
+    margin-top: 150px;
+    color: #777777;
+    margin-bottom: 109px;
+}
+
+.company__title {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: calc(46.88 / 40 * 100%);
+    letter-spacing: 0.08em;
+}
+
+.company__column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__subtitle {
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: calc(27 / 18 * 100%);
+}
+
+.company__column-left {
+    max-width: 514px;
+}
+
+.company__list {
+    position: relative;
+}
+
+.company__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #777777;
+}
+
+.button__arrow {
+    background-color: #fff;
+    padding: 0;
+    
+}
+
+.button__arrow::before {
+    content: url('../img/company__descr/icon_arrow.svg');
 }
 
 
+.button__arrow-rotate {
+    transform: rotate(270deg);
+    transition: all .1s;
+}
+
+.company__item:last-child {
+    border-bottom: 1px solid #777777;
+}
+
+.company__content {
+    padding: 27px 0;
+}
+
+.company__item-descr {
+    font-family: 'Roboto';
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    color: #777777;
+}
+
+.descr-none {
+    display: none;
+}
+
+.company__item-descr--visit {
+    display: block;
+    transition: all .3s;
+}
+
+.company__item-name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: calc(27 / 20 * 100%);
+    letter-spacing: 0.12em;
+}
+
+.portfolio{
+    
+}
+
+.portfolio__container {
+
+}
+
+.portfolio__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+.portfolio__title {
+    margin-bottom: 50px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: calc(47 / 40 * 100%);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.portfolio__menu {
+    width: 40%;
+    margin-bottom: 40px; 
+}
+
+.portfolio__list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.portfolio__item {
+    position: relative;
+}
+
+.portfolio__btn {
+    background-color: #fff;
+}
+
+.portfolio__btn:active {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/resetstyle.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="wrapper">
         <header class="header">
@@ -15,12 +17,12 @@
                 <div class="header__container __container">
                     <div class="header__inner">
                         <div class="header__logo">
-                            <img src="img/logo.png" alt="" class="logo__img" id="dark-logo">
+                            <img src="img/logo.png" alt="" class="logo__img" id="logo">
                         </div>
                         <div class="menu">
                             <ul class="list">
                                 <li class="list__item">
-                                    <a href="#" class="item__link">Портфолио</a>
+                                    <a href="#portfolio" class="item__link">Портфолио</a>
                                 </li>
                                 <li class="list__item">
                                     <a href="#" class="item__link">услуги и цены</a>
@@ -44,18 +46,130 @@
                             Ladesign
                         </h1>
                         <p class="header__subtitle">
-                            Дизайн-проекты жилых и коммерческих помещений. Малая архитектура
+                            Дизайн-проекты жилых и коммерческих помещений. Малая архитектура
                         </p>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            
+            <section class="descr__company">
+                <div class="company__container __container">
+                    <h2 class="company__title">
+                        Наша команда дает уверенность
+                    </h2>
+                    <div class="company__column">
+                        <div class="company__column-left">
+                            <p class="company__subtitle">
+                                Дизайн-проект от студии LA Design не только совершенен по дизайну, но и реализуем
+                            </p>
+                            <ul class="company__list">
+                                <li class="company__item">
+                                    <div class="company__content">
+                                        <h2 class="company__item-name">
+                                            Каждый проект уникален
+                                        </h2>
+                                        <p class="company__item-descr descr-none">
+                                            Дизайнеры и архитекторы студии не работают по шаблону, учитывают все
+                                            пожелания и не копируют работы из чужих портфолио
+                                        </p>
+                                    </div>
+                                    <button class="button__arrow" onclick="rotateBtn()" id="btn1"></button>
+                                </li>
+                                <li class="company__item">
+                                    <div class="company__content">
+                                        <h2 class="company__item-name">
+                                            Полное сопровождение
+                                        </h2>
+                                        <p class="company__item-descr descr-none">
+                                            Дизайнеры и архитекторы студии не работают по шаблону, учитывают все
+                                            пожелания и не копируют работы из чужих портфолио
+                                        </p>
+                                    </div>
+                                    <button class="button__arrow" onclick="rotateBtn1()" id="btn2"></button>
+                                </li>
+                                <li class="company__item">
+                                    <div class="company__content">
+                                        <h2 class="company__item-name">
+                                            Согласование перепланировки
+                                        </h2>
+                                        <p class="company__item-descr descr-none">
+                                            Дизайнеры и архитекторы студии не работают по шаблону, учитывают все
+                                            пожелания и не копируют работы из чужих портфолио
+                                        </p>
+                                    </div>
+                                    <button class="button__arrow" onclick="rotateBtn2()" id="btn3"></button>
+                                </li>
+                                <li class="company__item">
+                                    <div class="company__content">
+                                        <h2 class="company__item-name">
+                                            Техническая документация
+                                        </h2>
+                                        <p class="company__item-descr descr-none">
+                                            Дизайнеры и архитекторы студии не работают по шаблону, учитывают все
+                                            пожелания и не копируют работы из чужих портфолио
+                                        </p>
+                                    </div>
+                                    <button class="button__arrow" onclick="rotateBtn3()" id="btn4"></button>
+                                </li>
+                                <li class="company__item">
+                                    <div class="company__content">
+                                        <h2 class="company__item-name">
+                                            Строгая политика конфиденциальности
+                                        </h2>
+                                        <p class="company__item-descr descr-none">
+                                            Дизайнеры и архитекторы студии не работают по шаблону, учитывают все
+                                            пожелания и не копируют работы из чужих портфолио
+                                        </p>
+                                    </div>
+                                    <button class="button__arrow" onclick="rotateBtn4()" id="btn5"></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="company__column-right">
+                            <img src="img/company__descr/example.jpg" alt="example">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <sectoin class="portfolio" id="portfolio">
+                <div class=" portfolio__container __container">
+                    <div class="portfolio__inner">
+                        <h2 class="portfolio__title">
+                            Портфолио
+                        </h2>
+                        <div class="portfolio__menu">
+                            <ul class="portfolio__list">
+                                <li class="portfolio__item">
+                                    <button class="portfolio__btn">
+                                        все работы<sup>29</sup>
+                                    </button>
+                                </li>
+                                <li class="portfolio__item">
+                                    <button class="portfolio__btn">
+                                        квартиры<sup>18</sup>
+                                    </button>
+                                </li>
+                                <li class="portfolio__item">
+                                    <button class="portfolio__btn">
+                                        дома<sup>12</sup>
+                                    </button>
+                                </li>
+                                <li class="portfolio__item">
+                                    <button class="portfolio__btn">
+
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </sectoin>
         </main>
     </div>
 
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
